@@ -2490,6 +2490,110 @@ body {
     font-size: 1rem;
 }
 
+/* Quantity Stepper Styles */
+.quantity-control-container {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.quantity-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--white);
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.qty-decrement,
+.qty-increment {
+    background: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-smooth);
+    font-size: 0.9rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(242, 140, 40, 0.3);
+}
+
+.qty-decrement:hover:not(:disabled),
+.qty-increment:hover:not(:disabled) {
+    background: #e67d1f;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(242, 140, 40, 0.5);
+}
+
+.qty-decrement:active:not(:disabled),
+.qty-increment:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.qty-decrement:disabled,
+.qty-increment:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: none;
+    transform: none;
+}
+
+.qty-decrement:disabled:hover,
+.qty-increment:disabled:hover {
+    background: #ccc;
+    transform: none;
+    box-shadow: none;
+}
+
+.qty-decrement i,
+.qty-increment i {
+    font-size: 0.85rem;
+    pointer-events: none;
+}
+
+.quantity-display {
+    min-width: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    font-family: 'Poppins', sans-serif;
+    padding: 0 8px;
+}
+
+/* Responsive adjustments for quantity stepper */
+@media (max-width: 768px) {
+    .quantity-stepper {
+        max-width: 160px;
+        padding: 6px 10px;
+        gap: 10px;
+    }
+    
+    .qty-decrement,
+    .qty-increment {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    .quantity-display {
+        font-size: 1rem;
+        min-width: 35px;
+    }
+}
+
 @media (max-width: 768px) {
     .back-to-gallery-btn {
         position: relative;
@@ -2788,11 +2892,18 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s;
+    max-width: 350px;
+    font-weight: 500;
 }
 
 .cart-notification.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.cart-notification.error {
+    background: #d32f2f;
+    box-shadow: 0 5px 20px rgba(211, 47, 47, 0.4);
 }
 
 @media (max-width: 768px) {
