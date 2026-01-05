@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emam FOOD DISTRIBUTIONS - Food Distribution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="logo.svg" alt="Emam FOOD DISTRIBUTIONS" class="logo-image">
+                </div>
+                <div class="header-right">
+                    <div class="order-line">
+                        <i class="fas fa-phone"></i>
+                        <span>Order Line: <a href="tel:03330064811">03330064811</a></span>
+                    </div>
+                    <div class="cart-icon-container">
+                        <button id="cartBtn" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cartCount" class="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#gallery">Items Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Image Slider -->
+        <div class="hero-slider">
+            <div class="slide slide-1 active">
+                <img src="slide bun.png" alt="Fresh Buns">
+            </div>
+            <div class="slide slide-2">
+                <img src="slide ppoultry.png" alt="Poultry">
+            </div>
+            <div class="slide slide-3">
+                <img src="slide pizza.png" alt="Pizza">
+            </div>
+            <div class="slide slide-4">
+                <img src="slide fries.png" alt="Fries">
+            </div>
+            <div class="slide slide-5">
+                <img src="Slide drink.jpeg" alt="Drinks">
+            </div>
+            <div class="slide slide-6">
+                <img src="slide burger.png" alt="Burgers">
+            </div>
+        </div>
+        
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Slider Navigation Arrows -->
+        <button class="slider-arrow slider-arrow-prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow slider-arrow-next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+            <span class="dot" data-slide="5"></span>
+        </div>
+        
+        <!-- Hero Content (above slider) -->
+        <div class="hero-content">
+            <div class="halal-logo-container">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 300 300"
+                    role="img"
+                    aria-label="Halal logo"
+                    class="halal-logo"
+                >
+                    <defs>
+                        <!-- Clip top / bottom halves -->
+                        <clipPath id="clipTop">
+                            <rect x="0" y="0" width="300" height="150" />
+                        </clipPath>
+                        <clipPath id="clipBottom">
+                            <rect x="0" y="150" width="300" height="150" />
+                        </clipPath>
+                    </defs>
+
+                    <!-- Outer green ring -->
+                    <circle cx="150" cy="150" r="140" fill="#1f6b2e" />
+
+                    <!-- Inner white ring (to mimic the double ring look) -->
+                    <circle cx="150" cy="150" r="128" fill="#ffffff" />
+
+                    <!-- Inner main circle (used as base) -->
+                    <circle cx="150" cy="150" r="118" fill="#ffffff" />
+
+                    <!-- Top half green fill -->
+                    <circle cx="150" cy="150" r="118" fill="#1f6b2e" clip-path="url(#clipTop)" />
+
+                    <!-- Divider line between halves -->
+                    <rect x="32" y="148" width="236" height="4" fill="#1f6b2e" />
+
+                    <!-- Arabic text (top) -->
+                    <text
+                        x="150"
+                        y="112"
+                        text-anchor="middle"
+                        font-size="78"
+                        fill="#ffffff"
+                        font-family="Amiri, Scheherazade New, 'Noto Naskh Arabic', serif"
+                        style="font-weight:700"
+                        direction="rtl"
+                        unicode-bidi="bidi-override"
+                    >حلال</text>
+
+                    <!-- HALAL text (bottom) -->
+                    <text
+                        x="150"
+                        y="218"
+                        text-anchor="middle"
+                        font-size="54"
+                        fill="#1f6b2e"
+                        font-family="Arial, Helvetica, sans-serif"
+                        style="font-weight:800; letter-spacing:2px"
+                    >HALAL</text>
+                </svg>
+            </div>
+            <h2>Quality Food Distribution</h2>
+            <p>Your trusted partner for premium food products</p>
+            <a href="#gallery" class="btn-primary">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Items Gallery Section -->
+    <section id="gallery" class="gallery-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title" data-text="ITEMS GALLERY">ITEMS GALLERY</h2>
+            <div class="gallery-grid">
+                <!-- Poultry -->
+                <div class="category-card" data-category="poultry">
+                    <div class="category-image">
+                        <img src="POULTRY.png" alt="Poultry">
+                        <div class="category-overlay">
+                            <h3>Poultry</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frozen -->
+                <div class="category-card" data-category="frozen">
+                    <div class="category-image">
+                        <img src="Frozen.png" alt="Frozen">
+                        <div class="category-overlay">
+                            <h3>Frozen</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fries -->
+                <div class="category-card" data-category="fries">
+                    <div class="category-image">
+                        <img src="Fries.png" alt="Fries">
+                        <div class="category-overlay">
+                            <h3>Fries</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="category-card" data-category="drinks">
+                    <div class="category-image">
+                        <img src="Drinks.png" alt="Drinks">
+                        <div class="category-overlay">
+                            <h3>Drinks</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flour & Marination -->
+                <div class="category-card" data-category="flour">
+                    <div class="category-image">
+                        <img src="Flour & Marination.png" alt="Flour & Marination">
+                        <div class="category-overlay">
+                            <h3>Flour & Marination</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buns -->
+                <div class="category-card" data-category="buns">
+                    <div class="category-image">
+                        <img src="Buns.jpeg" alt="Buns">
+                        <div class="category-overlay">
+                            <h3>Buns</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kitchen Hygiene -->
+                <div class="category-card" data-category="hygiene">
+                    <div class="category-image">
+                        <img src="Kitchen hygiene.jpeg" alt="Kitchen Hygiene">
+                        <div class="category-overlay">
+                            <h3>Kitchen Hygiene</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oils & Fats -->
+                <div class="category-card" data-category="oils">
+                    <div class="category-image">
+                        <img src="Oils & Fats.jpeg" alt="Oils & Fats">
+                        <div class="category-overlay">
+                            <h3>Oils & Fats</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sauces & Satches -->
+                <div class="category-card" data-category="sauces">
+                    <div class="category-image">
+                        <img src="Sauces & Sachets.jpeg" alt="Sauces & Sachets">
+                        <div class="category-overlay">
+                            <h3>Sauces & Sachets</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="category-card" data-category="pizza">
+                    <div class="category-image">
+                        <img src="Pizza.jpeg" alt="Pizza">
+                        <div class="category-overlay">
+                            <h3>Pizza</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Packaging -->
+                <div class="category-card" data-category="packaging">
+                    <div class="category-image">
+                        <img src="Packaging.png" alt="Packaging">
+                        <div class="category-overlay">
+                            <h3>Packaging</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Items Display Area -->
+            <div id="categoryItemsContainer" class="category-items-container" style="display: none;">
+                <button id="backToGalleryBtn" class="back-to-gallery-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Gallery
+                </button>
+                <h3 id="categoryItemsTitle" class="category-items-title"></h3>
+                
+                <!-- Subcategory Buttons (for Pizza) -->
+                <div id="subcategoryButtons" class="subcategory-buttons" style="display: none;">
+                    <button class="subcategory-btn active" data-subcategory="toppings">Toopings</button>
+                    <button class="subcategory-btn" data-subcategory="pizzaBox">Pizza Box</button>
+                    <button class="subcategory-btn" data-subcategory="pizzaCheese">Pizza Cheese</button>
+                    <button class="subcategory-btn" data-subcategory="others">Others</button>
+                </div>
+                
+                <div id="categoryItemsGrid" class="category-items-grid">
+                    <!-- Items will be populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title" data-text="About Us">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Trusted Food Distribution Partner</h3>
+                    <p>Emam FOOD DISTRIBUTIONS is a leading food distribution company committed to providing high-quality food products to restaurants, cafes, and food service establishments. With years of experience in the industry, we ensure that our clients receive only the finest products.</p>
+                    <p>We specialize in a wide range of food categories including poultry, frozen foods, beverages, bakery items, and kitchen essentials. Our commitment to quality and customer satisfaction sets us apart in the market.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quality Assured Products</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast & Reliable Delivery</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Competitive Pricing</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Excellent Customer Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title" data-text="Contact Us">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Order Line</h4>
+                            <p><a href="tel:03330064811">03330064811</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@emamfood.co.uk">info@emamfood.co.uk</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; All Right Reserved. Emam FOOD DISTRIBUTIONS</p>
+            <p class="powered-by">Powered By: zainab Imran</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923064025025" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be populated here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total Items: <span id="cartTotalItems">0</span></strong>
+                </div>
+                <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "name": "emam-food-distributions",
+  "version": "1.0.0",
+  "description": "Emam Food Distributions - Food Distribution Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "food",
+    "distribution",
+    "halal"
+  ],
+  "author": "Zainab Imran",
+  "license": "MIT"
+}
+

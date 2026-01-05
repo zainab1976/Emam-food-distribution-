@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="120" height="90" role="img" aria-label="Food delivery truck logo">
+  <!-- Circle background -->
+  <path d="M95 220c0-95 77-172 172-172 55 0 104 26 136 67" fill="none" stroke="#F39A1B" stroke-width="42" stroke-linecap="round"/>
+  <path d="M403 115c24 30 38 68 38 109 0 95-77 172-172 172-77 0-142-50-165-119" fill="none" stroke="#22A85A" stroke-width="42" stroke-linecap="round"/>
+
+  <!-- Star badge -->
+  <circle cx="418" cy="105" r="45" fill="#22A85A"/>
+  <path d="M418 78l10 20 22 3-16 15 4 22-20-11-20 11 4-22-16-15 22-3z" fill="#FFD447"/>
+
+  <!-- Truck body -->
+  <rect x="125" y="195" rx="22" ry="22" width="220" height="110" fill="#F36F21"/>
+  <rect x="320" y="210" rx="20" ry="20" width="90" height="95" fill="#F36F21"/>
+
+  <!-- Cab window -->
+  <path d="M346 226h44c8 0 14 6 14 14v30h-72v-44z" fill="#1E2A3A" opacity="0.9"/>
+
+  <!-- Basket/box -->
+  <rect x="155" y="175" rx="16" ry="16" width="220" height="70" fill="#F28B1C"/>
+  <path d="M170 195h190" stroke="#ffffff" stroke-width="8" opacity="0.35"/>
+  <path d="M170 215h190" stroke="#ffffff" stroke-width="8" opacity="0.35"/>
+
+  <!-- Food items (simple shapes) -->
+  <!-- Greens -->
+  <path d="M185 170c-10-20 10-45 32-33 12-22 46-18 48 8 26-10 42 18 22 38-38 10-70 8-102-13z" fill="#22A85A"/>
+  <!-- Apple -->
+  <circle cx="280" cy="148" r="18" fill="#E74C3C"/>
+  <path d="M276 126c10-12 22-10 28-2-10 0-18 4-20 10z" fill="#22A85A"/>
+  <!-- Bread (2 loaves) -->
+  <path d="M320 132c26 0 46 16 46 36s-20 36-46 36-46-16-46-36 20-36 46-36z" fill="#F5B041"/>
+  <path d="M360 140c24 0 42 14 42 32s-18 32-42 32-42-14-42-32 18-32 42-32z" fill="#F8C471"/>
+
+  <!-- Wheels -->
+  <circle cx="185" cy="320" r="34" fill="#F36F21"/>
+  <circle cx="185" cy="320" r="22" fill="#ffffff"/>
+  <circle cx="370" cy="320" r="34" fill="#F36F21"/>
+  <circle cx="370" cy="320" r="22" fill="#ffffff"/>
+
+  <!-- Speed lines -->
+  <path d="M95 270h45" stroke="#F36F21" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M80 295h60" stroke="#F36F21" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+</svg>
+
+
