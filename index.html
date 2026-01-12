@@ -1,4 +1,4 @@
-                                `````       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>Emam FOOD DISTRIBUTIONS - Food Distribution</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -49,226 +49,379 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Image Slider -->
-        <div class="hero-slider">
-            <div class="slide slide-1 active">
-                <img src="slide bun.png" alt="Fresh Buns">
-            </div>
-            <div class="slide slide-2">
-                <img src="slide ppoultry.png" alt="Poultry">
-            </div>
-            <div class="slide slide-3">
-                <img src="slide pizza.png" alt="Pizza">
-            </div>
-            <div class="slide slide-4">
-                <img src="slide fries.png" alt="Fries">
-            </div>
-            <div class="slide slide-5">
-                <img src="Slide drink.jpeg" alt="Drinks">
-            </div>
-            <div class="slide slide-6">
-                <img src="slide burger.png" alt="Burgers">
+        <div class="container">
+            <div class="hero-wrapper">
+                <!-- Hero Content (Left Side) -->
+                <div class="hero-content">
+                    <div class="halal-logo-container">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 300 300"
+                            role="img"
+                            aria-label="Halal logo"
+                            class="halal-logo"
+                        >
+                            <defs>
+                                <!-- Clip top / bottom halves -->
+                                <clipPath id="clipTop">
+                                    <rect x="0" y="0" width="300" height="150" />
+                                </clipPath>
+                                <clipPath id="clipBottom">
+                                    <rect x="0" y="150" width="300" height="150" />
+                                </clipPath>
+                            </defs>
+
+                            <!-- Outer green ring -->
+                            <circle cx="150" cy="150" r="140" fill="#4CAF50" />
+
+                            <!-- Inner white ring (to mimic the double ring look) -->
+                            <circle cx="150" cy="150" r="128" fill="#ffffff" />
+
+                            <!-- Inner main circle (used as base) -->
+                            <circle cx="150" cy="150" r="118" fill="#ffffff" />
+
+                            <!-- Top half green fill -->
+                            <circle cx="150" cy="150" r="118" fill="#4CAF50" clip-path="url(#clipTop)" />
+
+                            <!-- Divider line between halves -->
+                            <rect x="32" y="148" width="236" height="4" fill="#4CAF50" />
+
+                            <!-- Arabic text (top) -->
+                            <text
+                                x="150"
+                                y="112"
+                                text-anchor="middle"
+                                font-size="78"
+                                fill="#ffffff"
+                                font-family="Amiri, Scheherazade New, 'Noto Naskh Arabic', serif"
+                                style="font-weight:700"
+                                direction="rtl"
+                                unicode-bidi="bidi-override"
+                            >حلال</text>
+
+                            <!-- HALAL text (bottom) -->
+                            <text
+                                x="150"
+                                y="218"
+                                text-anchor="middle"
+                                font-size="54"
+                                fill="#4CAF50"
+                                font-family="Arial, Helvetica, sans-serif"
+                                style="font-weight:800; letter-spacing:2px"
+                            >HALAL</text>
+                        </svg>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Premium Food</span>
+                        <span class="title-line highlight">Distribution</span>
+                    </h1>
+                    <p class="hero-description">
+                        Your trusted partner for high-quality halal food products. 
+                        Serving restaurants, cafes, and food service establishments with excellence.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Products</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#gallery" class="btn-primary">
+                            <span>Explore Products</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual (Right Side) -->
+                <div class="hero-visual">
+                    <div class="hero-image-grid">
+                        <div class="hero-image-item item-1">
+                            <img src="slide bun.png" alt="Fresh Buns">
+                        </div>
+                        <div class="hero-image-item item-2">
+                            <img src="slide ppoultry.png" alt="Poultry">
+                        </div>
+                        <div class="hero-image-item item-3">
+                            <img src="slide pizza.png" alt="Pizza">
+                        </div>
+                        <div class="hero-image-item item-4">
+                            <img src="slide fries.png" alt="Fries">
+                        </div>
+                    </div>
+                    <div class="hero-decoration">
+                        <div class="decoration-circle circle-1"></div>
+                        <div class="decoration-circle circle-2"></div>
+                        <div class="decoration-circle circle-3"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <!-- Dark Overlay -->
-        <div class="hero-overlay"></div>
-        
-        <!-- Slider Navigation Arrows -->
-        <button class="slider-arrow slider-arrow-prev" aria-label="Previous slide">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="slider-arrow slider-arrow-next" aria-label="Next slide">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-        
-        <!-- Slider Dots -->
-        <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
-            <span class="dot" data-slide="4"></span>
-            <span class="dot" data-slide="5"></span>
-        </div>
-        
-        <!-- Hero Content (above slider) -->
-        <div class="hero-content">
-            <div class="halal-logo-container">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 300 300"
-                    role="img"
-                    aria-label="Halal logo"
-                    class="halal-logo"
-                >
-                    <defs>
-                        <!-- Clip top / bottom halves -->
-                        <clipPath id="clipTop">
-                            <rect x="0" y="0" width="300" height="150" />
-                        </clipPath>
-                        <clipPath id="clipBottom">
-                            <rect x="0" y="150" width="300" height="150" />
-                        </clipPath>
-                    </defs>
-
-                    <!-- Outer green ring -->
-                    <circle cx="150" cy="150" r="140" fill="#1f6b2e" />
-
-                    <!-- Inner white ring (to mimic the double ring look) -->
-                    <circle cx="150" cy="150" r="128" fill="#ffffff" />
-
-                    <!-- Inner main circle (used as base) -->
-                    <circle cx="150" cy="150" r="118" fill="#ffffff" />
-
-                    <!-- Top half green fill -->
-                    <circle cx="150" cy="150" r="118" fill="#1f6b2e" clip-path="url(#clipTop)" />
-
-                    <!-- Divider line between halves -->
-                    <rect x="32" y="148" width="236" height="4" fill="#1f6b2e" />
-
-                    <!-- Arabic text (top) -->
-                    <text
-                        x="150"
-                        y="112"
-                        text-anchor="middle"
-                        font-size="78"
-                        fill="#ffffff"
-                        font-family="Amiri, Scheherazade New, 'Noto Naskh Arabic', serif"
-                        style="font-weight:700"
-                        direction="rtl"
-                        unicode-bidi="bidi-override"
-                    >حلال</text>
-
-                    <!-- HALAL text (bottom) -->
-                    <text
-                        x="150"
-                        y="218"
-                        text-anchor="middle"
-                        font-size="54"
-                        fill="#1f6b2e"
-                        font-family="Arial, Helvetica, sans-serif"
-                        style="font-weight:800; letter-spacing:2px"
-                    >HALAL</text>
-                </svg>
-            </div>
-            <h2>Quality Food Distribution</h2>
-            <p>Your trusted partner for premium food products</p>
-            <a href="#gallery" class="btn-primary">Explore Products</a>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="currentColor"/>
+            </svg>
         </div>
     </section>
 
     <!-- Items Gallery Section -->
     <section id="gallery" class="gallery-section scroll-reveal">
         <div class="container">
-            <h2 class="section-title" data-text="ITEMS GALLERY">ITEMS GALLERY</h2>
+            <div class="section-header">
+                <span class="section-label">Our Products</span>
+                <h2 class="section-title">Items Gallery</h2>
+                <p class="section-subtitle">Explore our wide range of premium food products</p>
+            </div>
             <div class="gallery-grid">
                 <!-- Poultry -->
-                <div class="category-card" data-category="poultry">
-                    <div class="category-image">
-                        <img src="POULTRY.png" alt="Poultry">
-                        <div class="category-overlay">
-                            <h3>Poultry</h3>
+                <div class="category-card featured" data-category="poultry">
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="POULTRY.png" alt="Poultry">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <h3 class="card-title">Poultry</h3>
+                        <p class="card-description">Fresh & premium quality</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Frozen -->
                 <div class="category-card" data-category="frozen">
-                    <div class="category-image">
-                        <img src="Frozen.png" alt="Frozen">
-                        <div class="category-overlay">
-                            <h3>Frozen</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Frozen.png" alt="Frozen">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3 class="card-title">Frozen</h3>
+                        <p class="card-description">Premium frozen products</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Fries -->
                 <div class="category-card" data-category="fries">
-                    <div class="category-image">
-                        <img src="Fries.png" alt="Fries">
-                        <div class="category-overlay">
-                            <h3>Fries</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Fries.png" alt="Fries">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="card-title">Fries</h3>
+                        <p class="card-description">Crispy & delicious</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Drinks -->
                 <div class="category-card" data-category="drinks">
-                    <div class="category-image">
-                        <img src="Drinks.png" alt="Drinks">
-                        <div class="category-overlay">
-                            <h3>Drinks</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Drinks.png" alt="Drinks">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                        <h3 class="card-title">Drinks</h3>
+                        <p class="card-description">Refreshing beverages</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Flour & Marination -->
                 <div class="category-card" data-category="flour">
-                    <div class="category-image">
-                        <img src="Flour & Marination.png" alt="Flour & Marination">
-                        <div class="category-overlay">
-                            <h3>Flour & Marination</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Flour & Marination.png" alt="Flour & Marination">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <h3 class="card-title">Flour & Marination</h3>
+                        <p class="card-description">Essential ingredients</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Buns -->
                 <div class="category-card" data-category="buns">
-                    <div class="category-image">
-                        <img src="Buns.jpeg" alt="Buns">
-                        <div class="category-overlay">
-                            <h3>Buns</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Buns.jpeg" alt="Buns">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <h3 class="card-title">Buns</h3>
+                        <p class="card-description">Fresh baked goods</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Kitchen Hygiene -->
                 <div class="category-card" data-category="hygiene">
-                    <div class="category-image">
-                        <img src="Kitchen hygiene.jpeg" alt="Kitchen Hygiene">
-                        <div class="category-overlay">
-                            <h3>Kitchen Hygiene</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Kitchen hygiene.jpeg" alt="Kitchen Hygiene">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h3 class="card-title">Kitchen Hygiene</h3>
+                        <p class="card-description">Clean & safe solutions</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Oils & Fats -->
                 <div class="category-card" data-category="oils">
-                    <div class="category-image">
-                        <img src="Oils & Fats.jpeg" alt="Oils & Fats">
-                        <div class="category-overlay">
-                            <h3>Oils & Fats</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Oils & Fats.jpeg" alt="Oils & Fats">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3 class="card-title">Oils & Fats</h3>
+                        <p class="card-description">Premium cooking oils</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Sauces & Satches -->
                 <div class="category-card" data-category="sauces">
-                    <div class="category-image">
-                        <img src="Sauces & Sachets.jpeg" alt="Sauces & Sachets">
-                        <div class="category-overlay">
-                            <h3>Sauces & Sachets</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Sauces & Sachets.jpeg" alt="Sauces & Sachets">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <h3 class="card-title">Sauces & Sachets</h3>
+                        <p class="card-description">Flavorful condiments</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Pizza -->
                 <div class="category-card" data-category="pizza">
-                    <div class="category-image">
-                        <img src="Pizza.jpeg" alt="Pizza">
-                        <div class="category-overlay">
-                            <h3>Pizza</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Pizza.jpeg" alt="Pizza">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h3 class="card-title">Pizza</h3>
+                        <p class="card-description">Complete pizza solutions</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Packaging -->
                 <div class="category-card" data-category="packaging">
-                    <div class="category-image">
-                        <img src="Packaging.png" alt="Packaging">
-                        <div class="category-overlay">
-                            <h3>Packaging</h3>
+                    <div class="card-image-wrapper">
+                        <div class="card-image">
+                            <img src="Packaging.png" alt="Packaging">
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                        <div class="card-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3 class="card-title">Packaging</h3>
+                        <p class="card-description">Eco-friendly options</p>
+                        <div class="card-cta">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -299,29 +452,65 @@
     <!-- About Us Section -->
     <section id="about" class="about-section scroll-reveal">
         <div class="container">
-            <h2 class="section-title" data-text="About Us">About Us</h2>
+            <div class="section-header">
+                <span class="section-label">Our Story</span>
+                <h2 class="section-title">About Emam FOOD DISTRIBUTIONS</h2>
+                <p class="section-subtitle">Excellence in food distribution since day one</p>
+            </div>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>Your Trusted Food Distribution Partner</h3>
-                    <p>Emam FOOD DISTRIBUTIONS is a leading food distribution company committed to providing high-quality food products to restaurants, cafes, and food service establishments. With years of experience in the industry, we ensure that our clients receive only the finest products.</p>
-                    <p>We specialize in a wide range of food categories including poultry, frozen foods, beverages, bakery items, and kitchen essentials. Our commitment to quality and customer satisfaction sets us apart in the market.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Quality Assured Products</span>
+                <div class="about-main">
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <h3>Your Trusted Food Distribution Partner</h3>
+                            <p>Emam FOOD DISTRIBUTIONS is a leading food distribution company committed to providing high-quality food products to restaurants, cafes, and food service establishments. With years of experience in the industry, we ensure that our clients receive only the finest products.</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Fast & Reliable Delivery</span>
+                        <p class="about-detail">We specialize in a wide range of food categories including poultry, frozen foods, beverages, bakery items, and kitchen essentials. Our commitment to quality and customer satisfaction sets us apart in the market.</p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="visual-card card-1">
+                            <div class="card-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h4>Quality First</h4>
+                            <p>Premium products sourced from trusted suppliers</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Competitive Pricing</span>
+                        <div class="visual-card card-2">
+                            <div class="card-icon">
+                                <i class="fas fa-truck-fast"></i>
+                            </div>
+                            <h4>Fast Delivery</h4>
+                            <p>Reliable and timely distribution to your door</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Excellent Customer Service</span>
+                    </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
                         </div>
+                        <h4>Quality Assured</h4>
+                        <p>All products meet the highest quality standards</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Fast & Reliable</h4>
+                        <p>Efficient delivery service you can count on</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-pound-sign"></i>
+                        </div>
+                        <h4>Competitive Pricing</h4>
+                        <p>Best value for your business needs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Excellent Service</h4>
+                        <p>Dedicated support team always ready to help</p>
                     </div>
                 </div>
             </div>
@@ -331,7 +520,11 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact-section scroll-reveal">
         <div class="container">
-            <h2 class="section-title" data-text="Contact Us">Contact Us</h2>
+            <div class="section-header">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We're here to help with all your food distribution needs</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">

@@ -445,20 +445,20 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Fallback to a better placeholder with category-specific colors
         const categoryColors = {
-            'poultry': { bg: 'FFD700', text: '0A2540' },
-            'frozen': { bg: 'E3F2FD', text: '0A2540' },
-            'fries': { bg: 'FFF3E0', text: '0A2540' },
-            'drinks': { bg: 'E8F5E9', text: '0A2540' },
-            'flour': { bg: 'FFF9C4', text: '0A2540' },
-            'buns': { bg: 'FFE0B2', text: '0A2540' },
-            'hygiene': { bg: 'E1F5FE', text: '0A2540' },
-            'oils': { bg: 'FFF59D', text: '0A2540' },
-            'sauces': { bg: 'FFEBEE', text: '0A2540' },
-            'pizza': { bg: 'FFE082', text: '0A2540' },
-            'packaging': { bg: 'F3E5F5', text: '0A2540' }
+            'poultry': { bg: 'E5E7EB', text: '1E3A8A' },
+            'frozen': { bg: 'E5E7EB', text: '1E3A8A' },
+            'fries': { bg: 'E5E7EB', text: '1E3A8A' },
+            'drinks': { bg: 'E5E7EB', text: '1E3A8A' },
+            'flour': { bg: 'E5E7EB', text: '1E3A8A' },
+            'buns': { bg: 'E5E7EB', text: '1E3A8A' },
+            'hygiene': { bg: 'E5E7EB', text: '1E3A8A' },
+            'oils': { bg: 'E5E7EB', text: '1E3A8A' },
+            'sauces': { bg: 'E5E7EB', text: '1E3A8A' },
+            'pizza': { bg: 'E5E7EB', text: '1E3A8A' },
+            'packaging': { bg: 'E5E7EB', text: '1E3A8A' }
         };
         
-        const colors = categoryColors[category] || { bg: 'E6E6E9', text: '0A2540' };
+        const colors = categoryColors[category] || { bg: 'E5E7EB', text: '1E3A8A' };
         const placeholderUrl = `https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=400&fit=crop&q=80`;
         
         return localPath;
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function() {
             itemCard.innerHTML = `
                 <div class="product-image">
                     <img src="${finalImageUrl}" alt="${item.name}" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/E6E6E9/0A2540?text=${encodeURIComponent(shortName)}'"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400/E5E7EB/1E3A8A?text=${encodeURIComponent(shortName)}'"
                          loading="lazy">
                     <div class="image-overlay">
                         <i class="fas fa-search-plus"></i>
@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Helper function to generate random color for placeholder
     function getRandomColor() {
-        const colors = ['0A2540', 'F28C28', '4CAF50', 'E53935', 'FF9800'];
+        const colors = ['1E3A8A', '4169E1', '6B7280', '374151', '4B5563'];
         return colors[Math.floor(Math.random() * colors.length)];
     }
 

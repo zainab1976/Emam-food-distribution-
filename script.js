@@ -169,12 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //     }
     // });
 
-    // Add stagger animation to gallery cards
-    const galleryCards = document.querySelectorAll('.category-card');
-    galleryCards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add('fade-in-up');
-    });
+    // Gallery cards are animated via CSS with staggered delays
+    // No JavaScript animation needed - handled by CSS
 
     // Contact Form Submission
     const contactForm = document.querySelector('.contact-form');
@@ -209,8 +205,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             }
-            
-            lastScroll = currentScroll;
         });
     }
 
@@ -880,7 +874,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <option value="">-- Please select --</option>
                             ${variants.map(variant => `<option value="${variant}">${variant}</option>`).join('')}
                         </select>
-                        <p class="variant-error" id="error-${variantId}" style="display: none; color: #d32f2f; font-size: 0.85rem; margin-top: 5px;">
+                        <p class="variant-error" id="error-${variantId}" style="display: none; color: #921FC6; font-size: 0.85rem; margin-top: 5px;">
                             Please select a variant before adding to cart
                         </p>
                     </div>
@@ -1418,7 +1412,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return Promise.resolve(); // No API configured, skip sync
         }
         
-        const item = cartState.itemsById[productId];
+        let item = cartState.itemsById[productId];
         if (!item && itemData) {
             // Item was just added, use itemData
             item = {
@@ -1705,6 +1699,9 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.addEventListener('click', function() {
                 if (this.disabled) return;
                 
+                // Add clicked class to turn orange
+                this.classList.add('clicked');
+                
                 const itemName = this.getAttribute('data-item-name');
                 const itemSize = this.getAttribute('data-item-size');
                 const hasVariants = this.getAttribute('data-has-variants') === 'true';
@@ -1723,6 +1720,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         variantSelect.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         variantSelect.focus();
                     }
+                    // Remove clicked class if validation fails
+                    this.classList.remove('clicked');
                     return;
                 }
                 
@@ -1734,6 +1733,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     selectedVariant: selectedVariant || null
                 };
                 cartActions.addOne(productId, itemData);
+                
+                // Keep orange for a moment, then remove class (button will be replaced by stepper)
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 500);
             });
         });
     }
