@@ -1,4 +1,4 @@
-# Deployment Guide for Emam Food Distributions Website
+# Deployment Guide for Lanza Food Distribution Website
 
 This guide will help you deploy your website so it's accessible to everyone via a public URL.
 

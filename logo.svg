@@ -45,14 +45,14 @@
     fill="url(#orangeGrad)"
   />
 
-  <!-- Text: EMAM -->
+  <!-- Text: LANZA -->
   <text
     x="200"
     y="255"
     text-anchor="middle"
     style="fill: #424242; font-size: 64px; font-weight: bold; font-family: sans-serif; letter-spacing: 8px"
   >
-    EMAM
+    LANZA
   </text>
 
   <!-- Text: FOOD DISTRIBUTION -->

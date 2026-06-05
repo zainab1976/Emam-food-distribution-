@@ -1,7 +1,7 @@
 {
   "name": "emam-food-backend",
   "version": "1.0.0",
-  "description": "Backend API for Emam Food Distributions",
+  "description": "Backend API for Lanza Food Distribution",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
