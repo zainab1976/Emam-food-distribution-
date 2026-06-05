@@ -1,0 +1,411 @@
+/**
+ * Lanza Food Distribution — Brand Theme
+ * Colors extracted from logo: green #22A85A / #1E7A43, orange #F36F21, gold #F39A1B
+ */
+
+/* ─── Header & Navigation ─── */
+.header {
+    background: rgba(255, 251, 247, 0.96);
+    border-bottom: 1px solid var(--border-brand);
+    box-shadow: var(--shadow-sm);
+}
+
+.order-line i {
+    color: var(--brand-orange);
+}
+
+.order-line a {
+    color: var(--brand-green-dark);
+}
+
+.order-line a:hover {
+    color: var(--brand-orange);
+}
+
+.cart-btn {
+    background: var(--gradient-brand-warm);
+    box-shadow: var(--shadow-orange);
+}
+
+.cart-btn:hover {
+    background: linear-gradient(135deg, var(--brand-orange-dark) 0%, var(--brand-orange) 100%);
+    box-shadow: var(--shadow-xl), var(--shadow-orange);
+}
+
+.nav-menu a::before {
+    background: var(--gradient-brand-warm);
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--brand-green-dark);
+}
+
+.hamburger span {
+    background: var(--brand-green-dark);
+}
+
+/* ─── Animated Logo Text ─── */
+.logo-animation__brand-primary {
+    color: var(--brand-green-dark);
+}
+
+.logo-animation__brand-secondary {
+    color: var(--brand-gold-dark);
+}
+
+/* ─── Hero ─── */
+.hero {
+    background: var(--gradient-hero);
+}
+
+.hero::before {
+    background: radial-gradient(circle, var(--overlay-orange) 0%, transparent 70%);
+}
+
+.hero::after {
+    background: radial-gradient(circle, var(--overlay-green) 0%, transparent 70%);
+}
+
+.title-line.highlight {
+    background: var(--gradient-brand-full);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.stat-number {
+    color: var(--brand-green-dark);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+    background: var(--gradient-brand);
+    box-shadow: var(--shadow-colored);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    box-shadow: var(--shadow-xl), var(--shadow-colored);
+}
+
+.btn-secondary {
+    border-color: var(--border-brand-warm);
+    background: var(--bg-card);
+}
+
+.btn-secondary:hover {
+    border-color: var(--brand-orange);
+    color: var(--brand-orange-dark);
+    box-shadow: var(--shadow-orange);
+}
+
+.checkout-btn,
+.back-to-gallery-btn {
+    background: var(--gradient-brand-warm);
+    box-shadow: var(--shadow-orange);
+}
+
+.checkout-btn:hover,
+.back-to-gallery-btn:hover {
+    background: linear-gradient(135deg, var(--brand-orange-dark) 0%, var(--brand-gold) 100%);
+    box-shadow: var(--shadow-xl), var(--shadow-orange);
+}
+
+.add-to-cart-btn {
+    background: var(--gradient-brand);
+    box-shadow: var(--shadow-colored);
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:active,
+.add-to-cart-btn.clicked {
+    background: var(--gradient-brand-warm);
+    box-shadow: var(--shadow-orange);
+}
+
+.subcategory-btn {
+    border-color: var(--border-brand);
+    background: var(--bg-card);
+}
+
+.subcategory-btn:hover {
+    border-color: var(--brand-orange);
+    box-shadow: var(--shadow-orange);
+}
+
+.subcategory-btn.active {
+    background: var(--gradient-brand);
+    border-color: var(--brand-green-dark);
+    box-shadow: var(--shadow-colored);
+}
+
+.subcategory-btn.active:hover {
+    background: var(--gradient-brand-warm);
+    border-color: var(--brand-orange);
+}
+
+/* ─── Sections ─── */
+.gallery-section::before {
+    background:
+        radial-gradient(circle at 20% 30%, var(--overlay-green) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, var(--overlay-orange) 0%, transparent 50%);
+}
+
+.gallery-section::after {
+    background: linear-gradient(90deg, transparent, var(--brand-orange), transparent);
+}
+
+.section-label {
+    background: var(--overlay-orange);
+    color: var(--brand-green-dark);
+    border: 1px solid var(--border-brand-warm);
+}
+
+.section-title::after {
+    background: var(--gradient-brand-warm);
+}
+
+.section-title::before {
+    background: linear-gradient(90deg, transparent, var(--brand-green), transparent);
+}
+
+/* ─── Category & Product Cards ─── */
+.category-card {
+    border: 1px solid var(--border-brand);
+    background: var(--bg-card);
+}
+
+.category-card:hover {
+    border-color: var(--brand-orange);
+    box-shadow: var(--shadow-xl), var(--shadow-orange);
+}
+
+.category-card::before {
+    background: var(--gradient-brand-full);
+}
+
+.card-icon-wrapper {
+    background: var(--gradient-brand-warm);
+}
+
+.category-card:hover .card-cta {
+    color: var(--brand-orange);
+}
+
+.product-item-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border-brand);
+}
+
+.product-item-card:hover {
+    border-color: var(--brand-orange);
+    box-shadow: var(--shadow-lg), var(--shadow-orange);
+}
+
+.product-item-card::before {
+    background: var(--gradient-brand-full);
+}
+
+/* ─── About & Features ─── */
+.visual-card,
+.feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-brand);
+}
+
+.visual-card:hover,
+.feature-card:hover {
+    border-color: var(--brand-orange);
+    box-shadow: var(--shadow-lg), var(--shadow-orange);
+}
+
+.card-icon,
+.feature-icon {
+    background: var(--gradient-brand-warm);
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--gradient-brand);
+}
+
+/* ─── Contact ─── */
+.contact-section::before {
+    background: radial-gradient(circle at 10% 20%, var(--overlay-green) 0%, transparent 45%),
+                radial-gradient(circle at 90% 80%, var(--overlay-orange) 0%, transparent 45%);
+}
+
+.contact-item i {
+    color: var(--brand-orange);
+}
+
+.contact-item a {
+    color: var(--brand-green-dark);
+}
+
+.contact-item a:hover {
+    color: var(--brand-orange);
+}
+
+.contact-form {
+    border: 1px solid var(--border-brand);
+    background: var(--bg-card);
+}
+
+.contact-form:hover {
+    border-color: var(--border-brand-warm);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 4px var(--overlay-green), var(--shadow-md);
+}
+
+/* ─── Footer ─── */
+.footer {
+    background: var(--gradient-footer);
+    border-top: 3px solid var(--brand-orange);
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.powered-by {
+    color: rgba(255, 234, 212, 0.75);
+}
+
+/* ─── Cart Modal ─── */
+.cart-modal-content {
+    border: 1px solid var(--border-brand);
+    background: var(--bg-card);
+}
+
+.cart-header {
+    background: var(--gradient-brand);
+    border-bottom: none;
+}
+
+.cart-header h2,
+.cart-header .close-cart {
+    color: var(--text-white);
+}
+
+.cart-header .close-cart {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.cart-header .close-cart:hover {
+    background: var(--brand-orange);
+    color: var(--text-white);
+}
+
+.checkout-btn {
+    background: var(--gradient-brand-warm);
+}
+
+.quantity-btn {
+    background: var(--brand-green-dark);
+    border-color: var(--brand-green-deep);
+}
+
+.quantity-btn:hover {
+    background: var(--brand-orange);
+    border-color: var(--brand-orange-dark);
+}
+
+/* ─── Forms & Controls ─── */
+.variant-label,
+.variant-select {
+    color: var(--brand-green-dark);
+}
+
+.variant-select {
+    border-color: var(--border-brand-warm);
+    background-color: var(--bg-secondary);
+}
+
+.variant-select:focus {
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 3px var(--overlay-green);
+}
+
+.quantity-stepper {
+    background: var(--bg-secondary);
+    border-color: var(--border-brand-warm);
+}
+
+.qty-decrement,
+.qty-increment {
+    background: var(--brand-green-dark);
+    border-color: var(--brand-green-deep);
+    box-shadow: var(--shadow-colored);
+}
+
+.qty-decrement:hover:not(:disabled),
+.qty-increment:hover:not(:disabled) {
+    background: var(--brand-orange);
+    border-color: var(--brand-orange-dark);
+    box-shadow: var(--shadow-orange);
+}
+
+.category-items-title {
+    border-image: linear-gradient(90deg, var(--brand-orange) 0%, var(--brand-green-dark) 100%) 1;
+}
+
+/* ─── WhatsApp (brand-adjacent green) ─── */
+.whatsapp-float {
+    background: linear-gradient(135deg, #25d366 0%, var(--brand-green) 100%);
+    box-shadow: 0 4px 18px rgba(34, 168, 90, 0.45);
+}
+
+.whatsapp-float:hover {
+    background: linear-gradient(135deg, #20ba5a 0%, var(--brand-green-dark) 100%);
+    box-shadow: 0 6px 24px rgba(34, 168, 90, 0.55);
+    transform: scale(1.08);
+}
+
+/* ─── Subtle brand hover transitions ─── */
+.category-card,
+.feature-card,
+.visual-card,
+.product-item-card,
+.contact-form,
+.btn-primary,
+.btn-secondary,
+.cart-btn,
+.add-to-cart-btn {
+    transition:
+        transform var(--transition-base),
+        box-shadow var(--transition-base),
+        border-color var(--transition-base),
+        background var(--transition-base),
+        color var(--transition-base);
+}
+
+/* ─── Responsive polish ─── */
+@media (max-width: 768px) {
+    .header {
+        background: rgba(255, 251, 247, 0.98);
+    }
+
+    .hero {
+        background: linear-gradient(160deg, #FFF8EE 0%, #FFEAD4 60%, #E8F5EC 100%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .category-card,
+    .feature-card,
+    .visual-card,
+    .product-item-card,
+    .btn-primary,
+    .btn-secondary,
+    .cart-btn {
+        transition: none;
+    }
+}

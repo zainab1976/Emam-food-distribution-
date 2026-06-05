@@ -873,7 +873,7 @@ document.addEventListener('DOMContentLoaded', function() {
             message += '\nPlease confirm availability and pricing.';
             
             // Open WhatsApp
-            const whatsappUrl = `https://wa.me/923064025025?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/923194426308?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         });
     }
